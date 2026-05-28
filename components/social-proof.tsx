@@ -14,7 +14,7 @@ export function SocialProof() {
     <section className="relative py-12 border-y border-border bg-secondary/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-center text-sm text-muted-foreground mb-8 animate-in fade-in duration-500">
-          Tecnologia validada e projetos desenvolvidos com:
+          Tecnologia desenvolvida para acelerar a transição energética brasileira.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-16">
           {partners.map((partner, index) => {

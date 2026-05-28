@@ -4,35 +4,51 @@ import { useState, useEffect } from "react"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { HomePage } from "@/components/pages/home-page"
-import { SolucoesSbmPage } from "@/components/pages/solucoes-sbm-page"
-import { EconomiaCircularPage } from "@/components/pages/economia-circular-page"
+import { SolucoesBmsPage } from "@/components/pages/solucoes-bms-page"
+import { SecondLifeSystemsPage } from "@/components/pages/second-life-systems-page"
 import { ContatoPage } from "@/components/pages/contato-page"
 
-type PageType = "home" | "solucoes-sbm" | "economia-circular" | "contato"
+type PageType = "home" | "solucoes-bms" | "second-life-systems" | "contato"
+
+const VALID_PAGES: PageType[] = ["home", "solucoes-bms", "second-life-systems", "contato"]
+
+const LEGACY_PAGE_ALIASES: Record<string, PageType> = {
+  "solucoes-sbm": "solucoes-bms",
+  "economia-circular": "second-life-systems",
+}
+
+function normalizePage(page: string): PageType | null {
+  const normalized = LEGACY_PAGE_ALIASES[page] ?? page
+  return VALID_PAGES.includes(normalized as PageType) ? (normalized as PageType) : null
+}
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<PageType>("home")
 
   const handleNavigate = (page: string) => {
-    setCurrentPage(page as PageType)
+    const normalizedPage = normalizePage(page)
+    if (!normalizedPage) return
+
+    setCurrentPage(normalizedPage)
     window.scrollTo({ top: 0, behavior: "smooth" })
   }
 
   // Handle browser back/forward buttons
   useEffect(() => {
     const handlePopState = () => {
-      const hash = window.location.hash.replace("#", "") as PageType
-      if (hash && ["home", "solucoes-sbm", "economia-circular", "contato"].includes(hash)) {
-        setCurrentPage(hash)
+      const hash = window.location.hash.replace("#", "")
+      const normalizedPage = normalizePage(hash)
+      if (normalizedPage) {
+        setCurrentPage(normalizedPage)
       }
     }
 
     window.addEventListener("popstate", handlePopState)
-    
-    // Check initial hash on load
-    const initialHash = window.location.hash.replace("#", "") as PageType
-    if (initialHash && ["home", "solucoes-sbm", "economia-circular", "contato"].includes(initialHash)) {
-      setCurrentPage(initialHash)
+
+    const initialHash = window.location.hash.replace("#", "")
+    const normalizedPage = normalizePage(initialHash)
+    if (normalizedPage) {
+      setCurrentPage(normalizedPage)
     }
 
     return () => window.removeEventListener("popstate", handlePopState)
@@ -49,10 +65,10 @@ export default function App() {
 
   const renderPage = () => {
     switch (currentPage) {
-      case "solucoes-sbm":
-        return <SolucoesSbmPage />
-      case "economia-circular":
-        return <EconomiaCircularPage />
+      case "solucoes-bms":
+        return <SolucoesBmsPage />
+      case "second-life-systems":
+        return <SecondLifeSystemsPage />
       case "contato":
         return <ContatoPage />
       default:

@@ -14,8 +14,8 @@ function AdvancedDashboard() {
               <Cpu className="h-6 w-6 text-white" />
             </div>
             <div>
-              <h4 className="text-lg font-semibold text-foreground">SBM Enterprise Dashboard</h4>
-              <p className="text-sm text-muted-foreground">Monitoramento Avançado de Frota</p>
+              <h4 className="text-lg font-semibold text-foreground">BMS Enterprise Dashboard</h4>
+              <p className="text-sm text-muted-foreground">Telemetria e Diagnóstico Preditivo</p>
             </div>
           </div>
           <div className="flex items-center gap-4">
@@ -42,7 +42,7 @@ function AdvancedDashboard() {
               <span className="text-xs text-muted-foreground">SOC Atual</span>
             </div>
             <div className="text-2xl font-bold text-foreground">78%</div>
-            <p className="text-xs text-muted-foreground mt-1">Média da frota</p>
+            <p className="text-xs text-muted-foreground mt-1">Média dos sistemas</p>
           </div>
           <div className="bg-secondary/50 rounded-xl p-4">
             <div className="flex items-center gap-2 mb-2">
@@ -138,9 +138,9 @@ function AdvancedDashboard() {
           </div>
           <div className="space-y-2">
             {[
-              { id: "EMP-001", type: "Empilhadeira", soh: 96, status: "ok" },
-              { id: "EMP-002", type: "Empilhadeira", soh: 89, status: "ok" },
-              { id: "VAN-001", type: "Van Elétrica", soh: 78, status: "warning" },
+              { id: "BESS-001", type: "Armazenamento Estacionário", soh: 96, status: "ok" },
+              { id: "BESS-002", type: "Backup Solar", soh: 89, status: "ok" },
+              { id: "ESS-001", type: "Infraestrutura Crítica", soh: 78, status: "warning" },
             ].map((device) => (
               <div key={device.id} className="flex items-center justify-between p-3 bg-background rounded-lg">
                 <div className="flex items-center gap-3">
@@ -177,7 +177,7 @@ const features = [
   {
     icon: Gauge,
     title: "SOC (State of Charge)",
-    description: "Monitoramento preciso do estado de carga em tempo real, permitindo otimização dos ciclos de uso e recarga de toda a frota.",
+    description: "Monitoramento preciso do estado de carga em tempo real, permitindo otimização dos ciclos de uso e recarga em sistemas estacionários e móveis.",
   },
   {
     icon: Battery,
@@ -198,20 +198,20 @@ const features = [
 
 const applications = [
   {
-    title: "Frotas de Veículos Elétricos",
-    description: "Gestão completa de baterias para frotas de carros, vans e ônibus elétricos com otimização de rotas baseada em autonomia.",
+    title: "Armazenamento Energético Estacionário",
+    description: "Monitoramento avançado de sistemas BESS para backup, peak shaving e integração com energia solar.",
   },
   {
-    title: "Empilhadeiras Industriais",
-    description: "Monitoramento 24/7 de empilhadeiras elétricas em operações logísticas e industriais de alta demanda.",
+    title: "Mobilidade Elétrica",
+    description: "Telemetria e diagnóstico preditivo para frotas elétricas, com gestão de SOC, SOH e resiliência operacional.",
   },
   {
-    title: "Maquinário Industrial",
-    description: "Acompanhamento de sistemas de backup e equipamentos móveis em plantas industriais e manufatura.",
+    title: "Infraestrutura Crítica e Agronegócio",
+    description: "Acompanhamento de sistemas de armazenamento em operações industriais, data centers e instalações rurais.",
   },
 ]
 
-export function SolucoesSbmPage() {
+export function SolucoesBmsPage() {
   return (
     <div className="pt-16 lg:pt-20">
       {/* Hero Section */}
@@ -225,17 +225,17 @@ export function SolucoesSbmPage() {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-secondary/50 mb-6">
               <Cpu className="h-4 w-4 text-purple-500" />
-              <span className="text-sm text-muted-foreground">Smart Battery Management</span>
+              <span className="text-sm text-muted-foreground">Battery Management Systems • AI Monitoring • Energy Resilience</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
               Plataforma{" "}
               <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-red-600 bg-clip-text text-transparent">
-                SBM
+                BMS
               </span>
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground text-pretty">
-              Diagnóstico avançado e análise em tempo real do SOC (State of Charge) e SOH (State of Health). 
-              Nossa plataforma utiliza Inteligência Artificial e Big Data para maximizar a vida útil e eficiência das suas baterias.
+              Monitoramento avançado com inteligência artificial, telemetria e diagnóstico preditivo para sistemas estacionários.
+              Nossa plataforma analisa SOC (State of Charge) e SOH (State of Health) em tempo real para maximizar vida útil e resiliência energética.
             </p>
           </div>
         </div>
@@ -276,7 +276,7 @@ export function SolucoesSbmPage() {
               Dashboard Intuitivo
             </h2>
             <p className="text-muted-foreground text-pretty">
-              Interface moderna e responsiva que centraliza todas as informações da sua frota em um único lugar.
+              Interface moderna e responsiva que centraliza telemetria, alertas preditivos e diagnóstico de todos os seus sistemas de armazenamento.
             </p>
           </div>
           <div className="relative">
@@ -293,7 +293,7 @@ export function SolucoesSbmPage() {
               Aplicações Principais
             </h2>
             <p className="text-muted-foreground text-pretty">
-              Ideal para gestão de frotas elétricas, empilhadeiras e maquinário industrial.
+              Tecnologia aplicada à mobilidade elétrica, armazenamento energético e infraestrutura crítica.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">

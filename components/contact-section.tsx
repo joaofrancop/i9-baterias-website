@@ -44,21 +44,20 @@ export function ContactSection() {
           <div className="animate-in fade-in slide-in-from-left-4 duration-700">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-secondary/50 mb-6">
               <Calendar className="h-4 w-4 text-purple-500" />
-              <span className="text-sm text-muted-foreground">Demonstração Personalizada</span>
+              <span className="text-sm text-muted-foreground">Agendar Reunião</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-              Agende uma demonstração do nosso{" "}
+              Agende uma reunião ou solicite um projeto de{" "}
               <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-red-600 bg-clip-text text-transparent">
-                Sistema SBM
-              </span>{" "}
-              ou solicite um projeto corporativo
+                infraestrutura energética
+              </span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8 text-pretty">
-              Nossa equipe de especialistas está pronta para apresentar a plataforma e desenvolver uma solução sob medida para as necessidades da sua operação.
+              Desenvolvemos soluções inteligentes para armazenamento energético, mobilidade elétrica e autonomia operacional.
             </p>
             <ul className="space-y-4">
               {[
-                "Demonstração ao vivo da plataforma SBM",
+                "Apresentação da plataforma BMS",
                 "Análise técnica personalizada",
                 "Proposta comercial detalhada",
                 "Retorno em até 48 horas úteis",
@@ -131,10 +130,10 @@ export function ContactSection() {
                       <SelectValue placeholder="Selecione uma área de interesse" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="demonstracao-sbm">Demonstração do Sistema SBM</SelectItem>
-                      <SelectItem value="plataforma-sbm">Plataforma SBM (Software)</SelectItem>
-                      <SelectItem value="second-life">Economia Circular (Second Life)</SelectItem>
-                      <SelectItem value="consultoria">Consultoria e Projetos</SelectItem>
+                      <SelectItem value="demonstracao-bms">Apresentação da Plataforma BMS</SelectItem>
+                      <SelectItem value="plataforma-bms">Licenciamento da Plataforma BMS</SelectItem>
+                      <SelectItem value="second-life">Second Life Systems</SelectItem>
+                      <SelectItem value="energy-infrastructure">Energy Infrastructure</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>

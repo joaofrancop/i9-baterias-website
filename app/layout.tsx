@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'i9+ Baterias | Armazenamento de Energia e Economia Circular',
-  description: 'Soluções corporativas em economia circular, baterias Second Life e infraestrutura avançada para eletromobilidade. Líder em Deep Tech para mobilidade elétrica e armazenamento de energias renováveis.',
+  title: 'i9+ Baterias | Infraestrutura Inteligente para o Futuro Energético',
+  description: 'Deep tech brasileira especializada em sistemas inteligentes de armazenamento energético, plataforma BMS, segunda vida de baterias e infraestrutura para transição energética.',
   generator: 'v0.app',
   icons: {
     icon: [

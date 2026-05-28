@@ -4,8 +4,8 @@ import { Mail, Phone, MapPin, Linkedin, Instagram } from "lucide-react"
 
 const quickLinks = [
   { page: "home", label: "Home" },
-  { page: "solucoes-sbm", label: "Soluções SBM" },
-  { page: "economia-circular", label: "Economia Circular" },
+  { page: "solucoes-bms", label: "Soluções BMS" },
+  { page: "second-life-systems", label: "Second Life Systems" },
   { page: "contato", label: "Contato" },
 ]
 
@@ -36,7 +36,7 @@ export function Footer({ onNavigate }: FooterProps) {
               <span className="text-foreground">Baterias</span>
             </button>
             <p className="text-muted-foreground text-sm max-w-md mb-6 text-pretty">
-              Líder em Deep Tech para mobilidade elétrica, economia circular e armazenamento de energias renováveis. Transformando o futuro energético do Brasil.
+              Deep tech brasileira especializada em sistemas inteligentes de armazenamento energético, segunda vida de baterias e infraestrutura para transição energética.
             </p>
             <div className="flex items-center gap-4">
               <a
@@ -98,7 +98,7 @@ export function Footer({ onNavigate }: FooterProps) {
                 © {new Date().getFullYear()} i9+ Baterias. Todos os direitos reservados.
               </p>
               <p className="text-xs text-muted-foreground/60 italic">
-                i9+ Baterias — Inovação e Sustentabilidade em Energia.
+                i9+ Baterias — Infraestrutura inteligente para a transição energética.
               </p>
             </div>
             <div className="flex items-center gap-6">

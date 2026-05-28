@@ -5,23 +5,23 @@ import { Clock, Brain, TrendingDown, FileText } from "lucide-react"
 const benefits = [
   {
     icon: Clock,
-    title: "Monitoramento 24/7",
-    description: "Acompanhamento ininterrupto de toda a sua frota de baterias em tempo real.",
+    title: "Monitoramento em Tempo Real",
+    description: "Acompanhamento contínuo de sistemas de armazenamento e baterias em operação.",
   },
   {
     icon: Brain,
-    title: "Predição de Falhas (IA)",
+    title: "Diagnóstico Preditivo",
     description: "Algoritmos de machine learning identificam anomalias antes que se tornem problemas.",
   },
   {
     icon: TrendingDown,
-    title: "Economia Operacional",
-    description: "Reduza custos com manutenção corretiva e maximize a vida útil dos seus ativos.",
+    title: "Maior Vida Útil das Baterias",
+    description: "Maximize a performance e prolongue o ciclo de vida dos seus ativos energéticos.",
   },
   {
     icon: FileText,
-    title: "Relatórios ESG",
-    description: "Documentação completa para compliance ambiental e relatórios de sustentabilidade.",
+    title: "Resiliência Energética",
+    description: "Maior autonomia operacional e segurança energética para infraestrutura crítica.",
   },
 ]
 

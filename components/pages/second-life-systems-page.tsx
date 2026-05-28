@@ -7,7 +7,7 @@ const cycleSteps = [
   {
     step: 1,
     title: "Coleta e Diagnóstico",
-    description: "Recebemos baterias de veículos elétricos e equipamentos industriais. Realizamos diagnóstico completo utilizando nossa plataforma SBM para avaliar SOH, capacidade residual e viabilidade de recondicionamento.",
+    description: "Recebemos baterias de veículos elétricos e equipamentos industriais. Realizamos diagnóstico completo utilizando nossa plataforma BMS para avaliar SOH, capacidade residual e viabilidade de recondicionamento.",
     icon: Search,
     color: "from-blue-500 to-blue-600",
   },
@@ -68,7 +68,7 @@ const applications = [
   },
 ]
 
-export function EconomiaCircularPage() {
+export function SecondLifeSystemsPage() {
   return (
     <div className="pt-16 lg:pt-20">
       {/* Hero Section */}
@@ -82,17 +82,17 @@ export function EconomiaCircularPage() {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-secondary/50 mb-6">
               <Recycle className="h-4 w-4 text-green-500" />
-              <span className="text-sm text-muted-foreground">Second Life Batteries</span>
+              <span className="text-sm text-muted-foreground">Second Life Systems</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
-              Economia{" "}
+              Second Life{" "}
               <span className="bg-gradient-to-r from-green-500 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-                Circular
+                Systems
               </span>
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground text-pretty">
-              Prolongamento da vida útil e recondicionamento de baterias de lítio. 
-              Transformamos passivos ambientais em ativos energéticos eficientes.
+              Reaproveitamento de baterias automotivas para armazenamento de energia e resiliência energética.
+              Transformamos passivos ambientais em ativos para a transição energética brasileira.
             </p>
           </div>
         </div>
@@ -216,7 +216,7 @@ export function EconomiaCircularPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-              Benefícios da Economia Circular
+              Benefícios dos Second Life Systems
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

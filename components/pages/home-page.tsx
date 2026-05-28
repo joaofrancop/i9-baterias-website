@@ -107,29 +107,29 @@ function DataVisualization() {
 const solutions = [
   {
     icon: Cpu,
-    title: "Plataforma SBM",
-    description: "Monitoramento em tempo real com IA para gestão inteligente de frotas elétricas.",
-    page: "solucoes-sbm",
+    title: "Plataforma BMS",
+    description: "Monitoramento avançado com inteligência artificial, telemetria e diagnóstico preditivo para sistemas estacionários.",
+    page: "solucoes-bms",
   },
   {
     icon: Recycle,
-    title: "Economia Circular",
-    description: "Recondicionamento e segunda vida para baterias de lítio.",
-    page: "economia-circular",
+    title: "Second Life Systems",
+    description: "Reaproveitamento de baterias automotivas para armazenamento de energia e resiliência energética.",
+    page: "second-life-systems",
   },
   {
     icon: Lightbulb,
-    title: "Consultoria",
-    description: "Projetos customizados para transição energética corporativa.",
+    title: "Energy Infrastructure",
+    description: "Projetos integrados de armazenamento energético, energia solar e autonomia operacional para empresas, agronegócio e infraestrutura crítica.",
     page: "contato",
   },
 ]
 
 const benefits = [
-  { icon: Activity, label: "Monitoramento 24/7" },
-  { icon: Brain, label: "Predição com IA" },
-  { icon: Zap, label: "Economia Operacional" },
-  { icon: Battery, label: "Relatórios ESG" },
+  { icon: Activity, label: "Monitoramento em Tempo Real" },
+  { icon: Brain, label: "Diagnóstico Preditivo" },
+  { icon: Zap, label: "Maior Vida Útil das Baterias" },
+  { icon: Battery, label: "Resiliência Energética" },
 ]
 
 interface HomePageProps {
@@ -150,19 +150,19 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-secondary/50 mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
               <Brain className="h-4 w-4 text-blue-500" />
-              <span className="text-sm text-muted-foreground">Smart Battery Management</span>
+              <span className="text-sm text-muted-foreground">Battery Management Systems • AI Monitoring • Energy Resilience</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-foreground mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150 text-balance">
-              Revolucione a Gestão de Baterias com{" "}
+              Infraestrutura Inteligente para o{" "}
               <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-red-600 bg-clip-text text-transparent">
-                Inteligência Artificial
+                Futuro Energético
               </span>
               .
             </h1>
 
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300 text-pretty">
-              Maior eficiência, redução drástica de custos operacionais e sustentabilidade real para a sua matriz energética.
+              Transformamos baterias de lítio em sistemas inteligentes de armazenamento energético com monitoramento avançado, segunda vida e gestão preditiva.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-500">
@@ -171,16 +171,16 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 className="bg-gradient-to-r from-blue-600 via-purple-500 to-red-600 text-white border-0 hover:opacity-90 transition-opacity w-full sm:w-auto"
                 onClick={() => onNavigate("contato")}
               >
-                Agendar Demonstração
+                Agendar Reunião
                 <ArrowRight className="h-4 w-4 ml-2" />
               </Button>
               <Button
                 variant="outline"
                 size="lg"
                 className="border-border hover:bg-secondary w-full sm:w-auto"
-                onClick={() => onNavigate("solucoes-sbm")}
+                onClick={() => onNavigate("solucoes-bms")}
               >
-                Conhecer o Sistema SBM
+                Conhecer o BMS
               </Button>
             </div>
           </div>
@@ -203,7 +203,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               </span>
             </h2>
             <p className="text-muted-foreground text-lg text-pretty">
-              Os três pilares da nossa tecnologia para transformar sua operação
+              Tecnologia aplicada à mobilidade elétrica, armazenamento energético e economia circular.
             </p>
           </div>
 
@@ -273,21 +273,17 @@ export function HomePage({ onNavigate }: HomePageProps) {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6 text-balance">
-              Pronto para transformar sua{" "}
-              <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-red-600 bg-clip-text text-transparent">
-                operação energética
-              </span>
-              ?
+              Prepare sua operação para a nova infraestrutura energética.
             </h2>
             <p className="text-lg text-muted-foreground mb-8 text-pretty">
-              Nossa equipe de engenheiros está pronta para desenvolver uma solução sob medida para sua empresa.
+              Desenvolvemos soluções inteligentes para armazenamento energético, mobilidade elétrica e autonomia operacional.
             </p>
             <Button
               size="lg"
               className="bg-gradient-to-r from-blue-600 via-purple-500 to-red-600 text-white border-0 hover:opacity-90 transition-opacity"
               onClick={() => onNavigate("contato")}
             >
-              Fale com um Especialista
+              Falar com um Especialista
               <ArrowRight className="h-4 w-4 ml-2" />
             </Button>
           </div>

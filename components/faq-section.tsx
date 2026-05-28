@@ -9,29 +9,29 @@ import {
 
 const faqs = [
   {
-    question: "O que é o sistema SBM?",
+    question: "Como funciona a plataforma BMS da i9+?",
     answer:
-      "O SBM (Smart Battery Management) é nossa plataforma proprietária de gestão inteligente de baterias. Utilizando sensores IoT e algoritmos de Inteligência Artificial, o sistema monitora em tempo real o estado de saúde (SOH) e o estado de carga (SOC) das baterias, prevendo falhas antes que ocorram e otimizando a vida útil dos seus ativos energéticos.",
+      "A plataforma BMS da i9+ é nosso sistema proprietário de gestão inteligente de baterias. Com telemetria, sensores IoT e algoritmos de inteligência artificial, monitoramos em tempo real o estado de saúde (SOH) e o estado de carga (SOC), realizamos diagnóstico preditivo e otimizamos a vida útil de sistemas estacionários e móveis.",
   },
   {
     question: "As baterias Second Life são seguras?",
     answer:
-      "Sim, absolutamente. Todas as baterias passam por um rigoroso processo de diagnóstico com nossa tecnologia SBM antes de serem recondicionadas. Apenas células que atendem aos nossos padrões de qualidade são aprovadas para segunda vida. Além disso, cada bateria recondicionada vem com certificado de segurança e garantia de performance, atendendo todas as normas técnicas vigentes.",
+      "Sim, absolutamente. Todas as baterias passam por um rigoroso processo de diagnóstico com nossa plataforma BMS antes de serem recondicionadas. Apenas células que atendem aos nossos padrões de qualidade são aprovadas para segunda vida. Além disso, cada bateria recondicionada vem com certificado de segurança e garantia de performance, atendendo todas as normas técnicas vigentes.",
   },
   {
     question: "Como a i9+ ajuda na pontuação ESG da minha empresa?",
     answer:
-      "A i9+ contribui diretamente para os três pilares ESG. No pilar Ambiental (E), reduzimos emissões de CO2 através da economia circular e prolongamento da vida útil das baterias. No pilar Social (S), promovemos empregos qualificados em tecnologia verde. No pilar de Governança (G), oferecemos relatórios detalhados e rastreáveis sobre a origem e o ciclo de vida de cada bateria, garantindo total transparência para auditorias e reportes de sustentabilidade.",
+      "A i9+ contribui diretamente para os pilares ESG com foco em descarbonização e segurança energética. No pilar Ambiental (E), reduzimos emissões de CO2 através da segunda vida de baterias e prolongamento da vida útil dos ativos. No pilar Social (S), promovemos empregos qualificados em tecnologia verde. No pilar de Governança (G), oferecemos relatórios detalhados e rastreáveis sobre a origem e o ciclo de vida de cada bateria, garantindo total transparência para auditorias e reportes de sustentabilidade.",
   },
   {
     question: "Quais tipos de baterias vocês trabalham?",
     answer:
-      "Trabalhamos principalmente com baterias de íon-lítio (Li-ion) em suas diversas composições: LFP (Lítio-Ferro-Fosfato), NMC (Níquel-Manganês-Cobalto) e LTO (Titanato de Lítio). Atendemos baterias de veículos elétricos, empilhadeiras, sistemas de armazenamento estacionário e equipamentos industriais. Consulte nossa equipe para aplicações específicas.",
+      "Trabalhamos principalmente com baterias de íon-lítio (Li-ion) em suas diversas composições: LFP (Lítio-Ferro-Fosfato), NMC (Níquel-Manganês-Cobalto) e LTO (Titanato de Lítio). Atendemos sistemas de armazenamento estacionário, veículos elétricos, infraestrutura crítica, agronegócio e equipamentos industriais. Consulte nossa equipe para aplicações específicas.",
   },
   {
-    question: "Qual é o prazo de implementação do sistema SBM?",
+    question: "Qual é o prazo de implementação da plataforma BMS?",
     answer:
-      "O prazo varia conforme a escala e complexidade da operação. Para frotas menores (até 50 veículos), a implementação completa leva em média 4 a 6 semanas. Para operações de maior porte, desenvolvemos um cronograma personalizado. O processo inclui instalação dos sensores IoT, integração com seus sistemas existentes e treinamento da equipe operacional.",
+      "O prazo varia conforme a escala e complexidade da operação. Para instalações menores (até 50 sistemas), a implementação completa leva em média 4 a 6 semanas. Para operações de maior porte, desenvolvemos um cronograma personalizado. O processo inclui instalação dos sensores IoT, integração com seus sistemas existentes e treinamento da equipe operacional.",
   },
 ]
 
@@ -47,7 +47,7 @@ export function FAQSection() {
             </span>
           </h2>
           <p className="text-muted-foreground text-lg text-pretty">
-            Tire suas dúvidas sobre nossas soluções
+            Tecnologia para armazenamento energético, mobilidade elétrica e infraestrutura inteligente.
           </p>
         </div>
 

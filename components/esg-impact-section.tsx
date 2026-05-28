@@ -20,7 +20,7 @@ const metrics = [
     icon: Activity,
     value: 98,
     suffix: "%",
-    label: "de Eficiência em Diagnóstico SBM",
+    label: "de precisão em diagnóstico de baterias",
   },
 ]
 
@@ -95,11 +95,11 @@ export function ESGImpactSection() {
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-balance">
             Nosso{" "}
             <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-red-600 bg-clip-text text-transparent">
-              Impacto ESG
+              Impacto Energético
             </span>
           </h2>
           <p className="text-muted-foreground text-lg text-pretty">
-            Resultados mensuráveis que fazem a diferença para o planeta
+            Tecnologia aplicada à descarbonização e segurança energética.
           </p>
         </div>
 

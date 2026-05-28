@@ -6,23 +6,23 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const solutions = [
   {
     icon: Cpu,
-    title: "Plataforma SBM (Software)",
+    title: "Plataforma BMS",
     description:
-      "Monitoramento em tempo real de frotas elétricas. Nossa plataforma de IA analisa dados de centenas de sensores para prever falhas e otimizar a performance das suas baterias.",
-    features: ["Monitoramento 24/7", "Alertas preditivos", "Dashboard intuitivo"],
+      "Monitoramento avançado com inteligência artificial, telemetria e diagnóstico preditivo para sistemas estacionários.",
+    features: ["Monitoramento em Tempo Real", "Diagnóstico Preditivo", "Dashboard intuitivo"],
   },
   {
     icon: Recycle,
-    title: "Economia Circular (Second Life)",
+    title: "Second Life Systems",
     description:
-      "Recondicionamento e nova vida útil para baterias de Lítio. Transformamos baterias de veículos elétricos em sistemas de armazenamento estacionário de alta performance.",
+      "Reaproveitamento de baterias automotivas para armazenamento de energia e resiliência energética.",
     features: ["Diagnóstico completo", "Certificação técnica", "Garantia estendida"],
   },
   {
     icon: Lightbulb,
-    title: "Consultoria e Projetos",
+    title: "Energy Infrastructure",
     description:
-      "Dimensionamento e planejamento para transição energética corporativa. Nossa equipe de engenheiros desenvolve soluções sob medida para sua operação.",
+      "Projetos integrados de armazenamento energético, energia solar e autonomia operacional para empresas, agronegócio e infraestrutura crítica.",
     features: ["Análise de viabilidade", "Projeto executivo", "Acompanhamento técnico"],
   },
 ]
@@ -40,7 +40,7 @@ export function SolutionsSection() {
             </span>
           </h2>
           <p className="text-muted-foreground text-lg animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150 text-pretty">
-            Os três pilares da nossa tecnologia para transformar sua operação
+            Tecnologia aplicada à mobilidade elétrica, armazenamento energético e economia circular.
           </p>
         </div>
 

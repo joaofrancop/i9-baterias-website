@@ -123,21 +123,21 @@ export function HeroSection() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-secondary/50 mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
             <Brain className="h-4 w-4 text-blue-500" />
-            <span className="text-sm text-muted-foreground">Smart Battery Management</span>
+            <span className="text-sm text-muted-foreground">Battery Management Systems • AI Monitoring • Energy Resilience</span>
           </div>
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-foreground mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150 text-balance">
-            Revolucione a Gestão de Baterias com{" "}
+            Infraestrutura Inteligente para o{" "}
             <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-red-600 bg-clip-text text-transparent">
-              Inteligência Artificial
+              Futuro Energético
             </span>
             .
           </h1>
 
           {/* Sub-headline */}
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300 text-pretty">
-            Maior eficiência, redução drástica de custos operacionais e sustentabilidade real para a sua matriz energética.
+            Transformamos baterias de lítio em sistemas inteligentes de armazenamento energético com monitoramento avançado, segunda vida e gestão preditiva.
           </p>
 
           {/* CTAs */}
@@ -148,7 +148,7 @@ export function HeroSection() {
               className="bg-gradient-to-r from-blue-600 via-purple-500 to-red-600 text-white border-0 hover:opacity-90 transition-opacity w-full sm:w-auto"
             >
               <a href="#contato" className="flex items-center gap-2">
-                Agendar Demonstração
+                Agendar Reunião
                 <ArrowRight className="h-4 w-4" />
               </a>
             </Button>
@@ -158,7 +158,7 @@ export function HeroSection() {
               size="lg"
               className="border-border hover:bg-secondary w-full sm:w-auto"
             >
-              <a href="#sbm">Conhecer o Sistema SBM</a>
+              <a href="#bms">Conhecer o BMS</a>
             </Button>
           </div>
         </div>

@@ -46,12 +46,12 @@ const teamMembers = [
   {
     icon: Users,
     title: "Equipe Comercial",
-    description: "Soluções personalizadas para sua empresa",
+    description: "Soluções de armazenamento energético, BMS e infraestrutura para empresas.",
   },
   {
     icon: Wrench,
     title: "Equipe Técnica",
-    description: "Engenheiros especializados em baterias de lítio",
+    description: "Especialistas em baterias de lítio, BESS e transição energética.",
   },
 ]
 
@@ -83,14 +83,14 @@ export function ContatoPage() {
         <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4 text-balance">
-              Fale com nossa{" "}
+              Falar com um{" "}
               <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-red-600 bg-clip-text text-transparent">
-                equipe de engenharia
+                Especialista
               </span>
             </h1>
             <p className="text-lg text-muted-foreground text-pretty">
-              Estamos prontos para desenvolver a solução ideal para sua operação. 
-              Entre em contato e agende uma demonstração.
+              Desenvolvemos soluções inteligentes para armazenamento energético, mobilidade elétrica e autonomia operacional.
+              Agende uma reunião com nossa equipe.
             </p>
           </div>
         </div>
@@ -240,10 +240,10 @@ export function ContatoPage() {
                           <SelectValue placeholder="Selecione uma opção" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="demonstracao-sbm">Demonstração do Sistema SBM</SelectItem>
-                          <SelectItem value="plataforma-sbm">Licenciamento da Plataforma SBM</SelectItem>
-                          <SelectItem value="second-life">Baterias Second Life</SelectItem>
-                          <SelectItem value="consultoria">Consultoria Técnica</SelectItem>
+                          <SelectItem value="demonstracao-bms">Apresentação da Plataforma BMS</SelectItem>
+                          <SelectItem value="plataforma-bms">Licenciamento da Plataforma BMS</SelectItem>
+                          <SelectItem value="second-life">Second Life Systems</SelectItem>
+                          <SelectItem value="energy-infrastructure">Energy Infrastructure</SelectItem>
                           <SelectItem value="parceria">Parceria Comercial</SelectItem>
                         </SelectContent>
                       </Select>

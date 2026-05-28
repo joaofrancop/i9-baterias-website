@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button"
 
 const navLinks = [
   { page: "home", label: "Home" },
-  { page: "solucoes-sbm", label: "Soluções SBM" },
-  { page: "economia-circular", label: "Economia Circular" },
+  { page: "solucoes-bms", label: "Soluções BMS" },
+  { page: "second-life-systems", label: "Second Life Systems" },
   { page: "contato", label: "Contato" },
 ]
 
@@ -65,7 +65,7 @@ export function Navbar({ currentPage, onNavigate }: NavbarProps) {
               className="bg-gradient-to-r from-blue-600 via-purple-500 to-red-600 text-white border-0 hover:opacity-90 transition-opacity"
               onClick={() => handleNavClick("contato")}
             >
-              Fale com um Especialista
+              Falar com um Especialista
             </Button>
           </div>
 
@@ -100,7 +100,7 @@ export function Navbar({ currentPage, onNavigate }: NavbarProps) {
                 className="bg-gradient-to-r from-blue-600 via-purple-500 to-red-600 text-white border-0 hover:opacity-90 transition-opacity mt-2"
                 onClick={() => handleNavClick("contato")}
               >
-                Fale com um Especialista
+                Falar com um Especialista
               </Button>
             </div>
           </div>

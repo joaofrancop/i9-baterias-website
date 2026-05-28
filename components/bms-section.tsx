@@ -14,7 +14,7 @@ function DashboardMockup() {
               <Cpu className="h-5 w-5 text-white" />
             </div>
             <div>
-              <h4 className="text-sm font-semibold text-foreground">SBM Dashboard</h4>
+              <h4 className="text-sm font-semibold text-foreground">BMS Dashboard</h4>
               <p className="text-xs text-muted-foreground">Monitoramento em tempo real</p>
             </div>
           </div>
@@ -92,9 +92,9 @@ function DashboardMockup() {
   )
 }
 
-export function SbmSection() {
+export function BmsSection() {
   return (
-    <section id="sbm" className="relative py-20 lg:py-32 overflow-hidden">
+    <section id="bms" className="relative py-20 lg:py-32 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-600/5 rounded-full blur-3xl" />
@@ -107,22 +107,22 @@ export function SbmSection() {
           <div className="animate-in fade-in slide-in-from-left-4 duration-700">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-secondary/50 mb-6">
               <Cpu className="h-4 w-4 text-purple-500" />
-              <span className="text-sm text-muted-foreground">Tecnologia Proprietária</span>
+              <span className="text-sm text-muted-foreground">Battery Management Systems • AI Monitoring • Energy Resilience</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
               Plataforma{" "}
               <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-red-600 bg-clip-text text-transparent">
-                SBM
+                BMS
               </span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8 text-pretty">
-              Monitoramento preditivo com IA e Big Data para maximizar a vida útil das suas baterias. Nossa plataforma integra sensores IoT, algoritmos de machine learning e análise em tempo real para garantir a máxima eficiência operacional.
+              Monitoramento avançado com inteligência artificial, telemetria e diagnóstico preditivo para sistemas estacionários. Nossa plataforma integra sensores IoT, algoritmos de machine learning e análise em tempo real para garantir resiliência energética.
             </p>
             <ul className="space-y-4">
               {[
-                "Diagnóstico preditivo de falhas antes que aconteçam",
-                "Otimização automática de ciclos de carga e descarga",
-                "Relatórios detalhados para tomada de decisão",
+                "Diagnóstico preditivo antes que falhas se tornem críticas",
+                "Telemetria contínua de SOC, SOH e performance operacional",
+                "Relatórios para tomada de decisão e segurança energética",
                 "Integração com sistemas de gestão empresarial",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-muted-foreground">
